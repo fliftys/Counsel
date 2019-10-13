@@ -11,6 +11,13 @@
 html{
     font-size: 100%;
 }
+
+@media(max-width: 666px){
+    html{
+        font-size: 80%;
+    }
+}
+
 body{
     box-sizing: border-box;
     font-family: sans-serif;
@@ -234,6 +241,13 @@ img{
 .firstDescription > .container{
     display: flex;
 }
+
+@media(max-width: 620px){
+    .firstDescription > .container{
+        flex-direction: column;
+    }
+}
+
 .firstDescription__description{
     flex: 1;
     padding: 6.25rem 0;
@@ -278,6 +292,11 @@ img{
     border: 2px solid #000;
     background: rgb(196, 196, 196);
 }
+@media(max-width: 620px){
+    .firstDescription__image-container{
+        height: 300px;
+    }
+}
 /* ------------------------------------------- */
 /* Section: secondDescription */
 /* ------------------------------------------- */
@@ -285,10 +304,21 @@ img{
 .secondDescription > .container{
     display: flex;
 }
+@media(max-width: 620px){
+    .secondDescription > .container{
+        flex-direction: column;
+    }
+}
+
 .secondDescription__chart{
     margin: 6.25rem 1rem 6.25rem 0;
     flex: 1;
     border: 1px solid black;
+}
+@media(max-width: 620px){
+    .secondDescription__chart{
+        height: 300px;
+    }
 }
 .secondDescription__description{
     padding: 6.25rem 0;
@@ -427,6 +457,12 @@ img{
 .whyWe > .container{
     display: flex;
 }
+@media(max-width: 680px){
+    .whyWe > .container{
+        flex-direction: column;
+    }
+}
+
 .whyWe__video{
     padding: 6.25rem 0;
     flex: 1;
@@ -452,6 +488,11 @@ img{
     align-items: center;
     cursor: pointer;
     font-size: 2.5rem;
+}
+@media(max-width: 680px){
+    .whyWe__video{
+        display: none;
+    }
 }
 
 .whyWe__description{
